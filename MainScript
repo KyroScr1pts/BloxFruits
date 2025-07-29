@@ -7125,7 +7125,7 @@ if World3 then
 	local CommF = (game:GetService("ReplicatedStorage")).Remotes.CommF_;
 	function GuitarPuzzleProgress()
 		if not CommF:InvokeServer("GuitarPuzzleProgress", "Check") then
-			if game.Lighting.Sky.MoonTextureId == "http://www.roblox.com/asset/?id=9709149431" and (game.Lighting.ClockTime > 16 or game.Lighting.ClockTime < 5) then
+			if game.Lighting.Sky.MoonTextureId == "http://www.roblox.com/asset/?id=" and (game.Lighting.ClockTime > 16 or game.Lighting.ClockTime < 5) then
 				if (game:GetService("Players")).LocalPlayer:DistanceFromCharacter(Vector3.new(-8654.314453125, 140.9499053955078, 6167.5283203125)) > 50 then
 					topos(CFrame.new(-8654.314453125, 140.9499053955078, 6167.5283203125));
 				end;
@@ -11529,7 +11529,7 @@ FruitTab:Button("Grab All Fruits", function()
 end);
 FruitTab:Seperator("Visual");
 FruitTab:Button("Rain Fruit", function()
-	for h, i in pairs((game:GetObjects("rbxassetid://14759368201"))[1]:GetChildren()) do
+	for h, i in pairs((game:GetObjects("rbxassetid://"))[1]:GetChildren()) do
 		i.Parent = game.Workspace.Map;
 		i:MoveTo(game.Players.LocalPlayer.Character.PrimaryPart.Position + Vector3.new(math.random((-50), 50), 100, math.random((-50), 50)));
 		if i.Fruit:FindFirstChild("AnimationController") then
@@ -11898,17 +11898,17 @@ task.spawn(function()
 	while task.wait() do
 		pcall(function()
 			if (game:GetService("Lighting")).Sky.MoonTextureId == "http://www.roblox.com/asset/?id=9709149431" then
-				FM:Set("ðŸŒ• Full Moon 100%");
+				FM:Set("Full Moon 100%");
 			elseif (game:GetService("Lighting")).Sky.MoonTextureId == "http://www.roblox.com/asset/?id=9709149052" then
-				FM:Set("ðŸŒ– Full Moon 75%");
+				FM:Set("Full Moon 75%");
 			elseif (game:GetService("Lighting")).Sky.MoonTextureId == "http://www.roblox.com/asset/?id=9709143733" then
-				FM:Set("ðŸŒ— Full Moon 50%");
+				FM:Set("Full Moon 50%");
 			elseif (game:GetService("Lighting")).Sky.MoonTextureId == "http://www.roblox.com/asset/?id=9709150401" then
-				FM:Set("ðŸŒ˜ Full Moon 25%");
+				FM:Set("Full Moon 25%");
 			elseif (game:GetService("Lighting")).Sky.MoonTextureId == "http://www.roblox.com/asset/?id=9709149680" then
-				FM:Set("ðŸŒ˜ Full Moon 15%");
+				FM:Set("Full Moon 15%");
 			else
-				FM:Set("ðŸŒ‘ Full Moon 0%");
+				FM:Set("Full Moon 0%");
 			end;
 		end);
 	end;
