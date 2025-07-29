@@ -3307,40 +3307,40 @@ local function TweenObject(obj, props, duration)
     tween:Play()
 end
 
-local Discord = Instance.new("TextButton")
+local Youtube = Instance.new("TextButton")
 local UICorner = Instance.new("UICorner")
 local Disc_Logo = Instance.new("ImageLabel")
 local Disc_Title = Instance.new("TextLabel")
 
-Discord.Name = "Discord"
-Discord.Parent = Main
-Discord.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
-Discord.BackgroundTransparency = 1 -- Làm cho nền trong suốt
-Discord.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Discord.BorderSizePixel = 0
-Discord.Position = UDim2.new(0, 430, 0, 16)
-Discord.Size = UDim2.new(0, 85, 0, 25)
-Discord.AutoButtonColor = false
-Discord.Font = Enum.Font.SourceSans
-Discord.Text = ""
-Discord.TextColor3 = Color3.fromRGB(0, 0, 0)
-Discord.TextSize = 14.000
+Youtube.Name = "Youtube"
+Youtube.Parent = Main
+Youtube.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+Youtube.BackgroundTransparency = 1 -- Làm cho nền trong suốt
+Youtube.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Youtube.BorderSizePixel = 0
+Youtube.Position = UDim2.new(0, 430, 0, 16)
+Youtube.Size = UDim2.new(0, 85, 0, 25)
+Youtube.AutoButtonColor = false
+Youtube.Font = Enum.Font.SourceSans
+Youtube.Text = ""
+Youtube.TextColor3 = Color3.fromRGB(0, 0, 0)
+Youtube.TextSize = 14.000
 
 UICorner.CornerRadius = UDim.new(0, 5)
-UICorner.Parent = Discord
+UICorner.Parent = Youtube
 
 Disc_Logo.Name = "Disc_Logo"
-Disc_Logo.Parent = Discord
+Disc_Logo.Parent = Youtube
 Disc_Logo.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Disc_Logo.BackgroundTransparency = 1.000
 Disc_Logo.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Disc_Logo.BorderSizePixel = 0
 Disc_Logo.Position = UDim2.new(0, 5, 0, 1)
 Disc_Logo.Size = UDim2.new(0, 23, 0, 23)
-Disc_Logo.Image = "http://www.roblox.com/asset/?id=1275974022"
+Disc_Logo.Image = "http://www.roblox.com/asset/?id=979137416"
 
 Disc_Title.Name = "Disc_Title"
-Disc_Title.Parent = Discord
+Disc_Title.Parent = Youtube
 Disc_Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Disc_Title.BackgroundTransparency = 1.000
 Disc_Title.BorderColor3 = Color3.fromRGB(0, 0, 0)
@@ -3348,31 +3348,31 @@ Disc_Title.BorderSizePixel = 0
 Disc_Title.Position = UDim2.new(0, 35, 0, 0)
 Disc_Title.Size = UDim2.new(0, 40, 0, 25)
 Disc_Title.Font = Enum.Font.SourceSansSemibold
-Disc_Title.Text = "Discord"
+Disc_Title.Text = "Youtube"
 Disc_Title.TextColor3 = Color3.fromRGB(255, 255, 255)
 Disc_Title.TextSize = 14.000
 Disc_Title.TextXAlignment = Enum.TextXAlignment.Left
 
 -- Hover Effects
-Discord.MouseEnter:Connect(function()
-    TweenObject(Discord, {BackgroundTransparency = 0.3}, .15)
+Youtube.MouseEnter:Connect(function()
+    TweenObject(Youtube, {BackgroundTransparency = 0.3}, .15)
     TweenObject(Disc_Logo, {ImageTransparency = 0.7}, .15)
     TweenObject(Disc_Title, {TextTransparency = 0.7}, .15)
 end)
 
-Discord.MouseLeave:Connect(function()
-    TweenObject(Discord, {BackgroundTransparency = 1}, .15)
+Youtube.MouseLeave:Connect(function()
+    TweenObject(Youtube, {BackgroundTransparency = 1}, .15)
     TweenObject(Disc_Logo, {ImageTransparency = 0}, .15)
     TweenObject(Disc_Title, {TextTransparency = 0}, .15)
 end)
 
--- Click event: copy Discord link
-Discord.MouseButton1Click:Connect(function()
+-- Click event: copy Youtube link
+Youtube.MouseButton1Click:Connect(function()
     (setclipboard or toclipboard)("https://www.youtube.com/@KyroScripts")
     wait(.1)
     game:GetService("StarterGui"):SetCore("SendNotification", {
-        Title = "Discord",
-        Text = "Discord copied on your clipboard",
+        Title = "Youtube",
+        Text = "Youtube copied on your clipboard",
         Button1 = "Okay",
         Duration = 20
     })
@@ -3397,9 +3397,9 @@ UICorner.Parent = ImageButton
     Cornerx.Name = "ServerCorner"
     Cornerx.Parent = Topdiscor
     Cornerxx.Name = "ServerCorner"
-    Cornerxx.Parent = Topdiscord
+    Cornerxx.Parent = TopYoutube
     Cornerxxx.Name = "ServerCorner"
-    Cornerxxx.Parent = TopdiscordI
+    Cornerxxx.Parent = TopYoutubeI
     Cornerxxxxx.Name = "ServerCorner"
     Cornerxxxxx.Parent = Topdiscor11
     Cornerxxxxxx.Name = "ServerCorner"
